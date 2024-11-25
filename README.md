@@ -1,3 +1,5 @@
+Hola a continuación se encuentra la estructura mi proyecto:
+
 EntregaFinalBackend2
 
 ┣ src
@@ -108,11 +110,11 @@ EntregaFinalBackend2
 
 ┗ package.json                  # Dependencias y scripts de la aplicación.
 
-Descripción
+*Descripción:
 Este proyecto es una API RESTful que permite realizar operaciones CRUD sobre usuarios, productos, pedidos y tickets. 
 Además, la autenticación se maneja con JWT y las rutas están protegidas por middleware.
 
-Características
+*Características:
 Autenticación JWT: El sistema permite registrar, iniciar sesión y verificar usuarios mediante JWT.
 Gestión de productos: Puedes crear, listar, actualizar y eliminar productos.
 Gestión de carritos y pedidos: Los usuarios pueden agregar productos a su carrito y realizar pedidos.
@@ -121,16 +123,16 @@ Envío de SMS: Integración con Twilio para enviar mensajes SMS de prueba.
 
 Configuración del Proyecto
 
-Instala las dependencias:
+*Instala las dependencias:
 npm install
-Configura el archivo .env:
+*Configura el archivo .env:
 Con los datos que se encuentran en .env.example
 
-Inicia el servidor:
+*Inicia el servidor:
 npm start
 El servidor debería estar corriendo en http://localhost:8080.
 
-Rutas de la API
+*Rutas de la API
 A continuación, se presentan algunas rutas clave de la API:
 
 Autenticación
