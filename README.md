@@ -1,58 +1,58 @@
 EntregaFinalBackend2
-┣ src
-┃ ┣ autenticacion
-┃ ┃ ┣ auth.controller.js        # Lógica para la autenticación de usuarios.
-┃ ┃ ┣ auth.middleware.js        # Middleware para verificar el JWT.
-┃ ┃ ┣ auth.router.js            # Rutas de autenticación.
-┃ ┃ ┣ auth.service.js           # Servicios de autenticación.
-┃ ┃ ┗ jwtUtils.js               # Utilidades para manejar JWT.
-┃ ┣ controllers
-┃ ┃ ┣ business.controller.js    # Controlador de negocios.
-┃ ┃ ┣ carts.controller.js       # Controlador de carritos.
-┃ ┃ ┣ orders.controller.js      # Controlador de pedidos.
-┃ ┃ ┣ products.controller.js    # Controlador de productos.
-┃ ┃ ┣ tickets.controller.js     # Controlador de tickets.
-┃ ┃ ┗ users.controller.js       # Controlador de usuarios.
-┃ ┣ dao
-┃ ┃ ┣ classes
-┃ ┃ ┃ ┣ business.dao.js         # Operaciones de negocio en la base de datos.
-┃ ┃ ┃ ┣ cart.dao.js             # Operaciones de carrito en la base de datos.
-┃ ┃ ┃ ┣ order.dao.js            # Operaciones de pedidos en la base de datos.
-┃ ┃ ┃ ┣ product.dao.js          # Operaciones de productos en la base de datos.
-┃ ┃ ┃ ┣ ticket.dao.js           # Operaciones de tickets en la base de datos.
-┃ ┃ ┃ ┗ user.dao.js             # Operaciones de usuarios en la base de datos.
-┃ ┃ ┗ models
-┃ ┃ ┃ ┣ business.model.js       # Modelo de negocio.
-┃ ┃ ┃ ┣ order.model.js          # Modelo de pedido.
-┃ ┃ ┃ ┣ ticket.model.js         # Modelo de ticket.
-┃ ┃ ┃ ┗ user.model.js           # Modelo de usuario.
-┃ ┣ dto
-┃ ┃ ┣ order.dto.js              # DTO para pedidos.
-┃ ┃ ┣ ticket.dto.js             # DTO para tickets.
-┃ ┃ ┗ user.dto.js               # DTO para usuarios.
-┃ ┣ middlewares
-┃ ┃ ┣ auth.middleware.js        # Middleware para autenticar usuarios.
-┃ ┃ ┗ authenticateToken.js      # Middleware para validar el token JWT.
-┃ ┣ repositorio
-┃ ┃ ┣ cart.repository.js        # Repositorio de carritos.
-┃ ┃ ┣ order.repository.js       # Repositorio de pedidos.
-┃ ┃ ┣ product.repository.js     # Repositorio de productos.
-┃ ┃ ┣ ticket.repository.js      # Repositorio de tickets.
-┃ ┃ ┗ user.repository.js        # Repositorio de usuarios.
-┃ ┣ routes
-┃ ┃ ┣ authRouter.js             # Rutas de autenticación.
-┃ ┃ ┣ business.router.js        # Rutas de negocios.
-┃ ┃ ┣ carts.router.js           # Rutas de carritos.
-┃ ┃ ┣ orders.router.js          # Rutas de pedidos.
-┃ ┃ ┣ products.router.js        # Rutas de productos.
-┃ ┃ ┣ tickets.router.js         # Rutas de tickets.
-┃ ┃ ┗ users.router.js           # Rutas de usuarios.
-┃ ┗ app.js                      # Archivo principal para iniciar la aplicación.
-┣ .env                          # Variables de entorno.
-┣ .env.example                  # Ejemplo de archivo .env.
-┣ .gitignore                    # Archivos y carpetas a ignorar por Git.
-┣ package-lock.json             # Bloqueo de versiones de dependencias.
-┗ package.json                  # Dependencias y scripts de la aplicación.
+ ┣ src
+ ┃ ┣ autenticacion
+ ┃ ┃ ┣ auth.controller.js
+ ┃ ┃ ┣ auth.middleware.js
+ ┃ ┃ ┣ auth.router.js
+ ┃ ┃ ┣ auth.service.js
+ ┃ ┃ ┗ jwtUtils.js
+ ┃ ┣ controllers
+ ┃ ┃ ┣ business.controller.js
+ ┃ ┃ ┣ carts.controller.js
+ ┃ ┃ ┣ orders.controller.js
+ ┃ ┃ ┣ products.controller.js
+ ┃ ┃ ┣ tickets.controller.js
+ ┃ ┃ ┗ users.controller.js
+ ┃ ┣ dao
+ ┃ ┃ ┣ classes
+ ┃ ┃ ┃ ┣ business.dao.js
+ ┃ ┃ ┃ ┣ cart.dao.js
+ ┃ ┃ ┃ ┣ order.dao.js
+ ┃ ┃ ┃ ┣ product.dao.js
+ ┃ ┃ ┃ ┣ ticket.dao.js
+ ┃ ┃ ┃ ┗ user.dao.js
+ ┃ ┃ ┗ models
+ ┃ ┃ ┃ ┣ business.model.js
+ ┃ ┃ ┃ ┣ order.model.js
+ ┃ ┃ ┃ ┣ ticket.model.js
+ ┃ ┃ ┃ ┗ user.model.js
+ ┃ ┣ dto
+ ┃ ┃ ┣ order.dto.js
+ ┃ ┃ ┣ ticket.dto.js
+ ┃ ┃ ┗ user.dto.js
+ ┃ ┣ middlewares
+ ┃ ┃ ┣ auth.middleware.js
+ ┃ ┃ ┗ authenticateToken.js
+ ┃ ┣ repositorio
+ ┃ ┃ ┣ cart.repository.js
+ ┃ ┃ ┣ order.repository.js
+ ┃ ┃ ┣ product.repository.js
+ ┃ ┃ ┣ ticket.repository.js
+ ┃ ┃ ┗ user.repository.js
+ ┃ ┣ routes
+ ┃ ┃ ┣ authRouter.js
+ ┃ ┃ ┣ business.router.js
+ ┃ ┃ ┣ carts.router.js
+ ┃ ┃ ┣ orders.router.js
+ ┃ ┃ ┣ products.router.js
+ ┃ ┃ ┣ tickets.router.js
+ ┃ ┃ ┗ users.router.js
+ ┃ ┗ app.js
+ ┣ .env
+ ┣ .env.example
+ ┣ .gitignore
+ ┣ package-lock.json
+ ┗ package.json
 
 Descripción
 Este proyecto es una API RESTful que permite realizar operaciones CRUD sobre usuarios, productos, pedidos y tickets. 
