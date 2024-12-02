@@ -129,34 +129,7 @@ npm install
 Con los datos que se encuentran en .env.example
 
 *Inicia el servidor:
-npm start
+node ./src/app.js
+
 El servidor debería estar corriendo en http://localhost:8080.
-
-*Rutas de la API
-A continuación, se presentan algunas rutas clave de la API:
-
-Autenticación
-POST /auth/register: Registra un nuevo usuario.
-POST /auth/login: Inicia sesión con el email y la contraseña.
-GET /auth/verify: Verifica el JWT del usuario.
-
-Usuarios
-GET /api/users: Lista todos los usuarios (requiere autenticación).
-GET /api/users/:id: Obtiene los detalles de un usuario específico (requiere autenticación).
-
-Productos
-GET /api/products: Lista todos los productos.
-POST /api/products: Crea un nuevo producto.
-GET /api/products/:id: Obtiene los detalles de un producto específico.
-
-Pedidos
-GET /api/orders: Lista todos los pedidos (requiere autenticación).
-POST /api/orders: Crea un nuevo pedido.
-GET /api/orders/:id: Obtiene los detalles de un pedido específico.
-
-Tickets
-POST /api/tickets: Crea un nuevo ticket.
-GET /api/tickets: Lista todos los tickets.
-SMS
-GET /sms: Envia un SMS de prueba usando Twilio.
 
